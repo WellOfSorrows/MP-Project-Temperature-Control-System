@@ -8,7 +8,6 @@ We need two ATMega32 microcontrollers, one to read the value of temperature and 
 - Constantly compares the two values, and as long as A is higher than B, converts the analog value of A to digital. The conversion should happen in real-time and as fast as possible therefore, no use of comparator interrupts is recommended.
 - Sends the digital value of A to the slave.
 - Prints the digital value of A on a 16x2 alphanumeric LCD.
-- 
 ## The Slave
 - Receives the temperature value from the master.
 - For temperatures between 25 and 55 degrees, the cooler motor must be turned on, starting with a duty cycle of 50% plus 10% for every additional 5 degrees. (E.g., for a temperature of 37 degrees, the duty cycle is 70%)
